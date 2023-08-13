@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ayoola Nurudeen Etiko</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,7 +17,7 @@
       </nav>
     </header>
 
-    <section style="background-color: #eee; width: 65%; float: left;">
+    <section style="background-color: #eee; width: 65%; float: left">
       <header>
         <h2>Primary Content</h2>
       </header>
@@ -52,7 +52,7 @@
         </p>
       </article>
     </section>
-    <aside style="background-color: #e2e2e2; width: 35%; float: left;">
+    <aside style="background-color: #e2e2e2; width: 35%; float: left">
       <header><h3>Secondary Content</h3></header>
       <figure>
         <img src="//unsplash.it/200/160" alt="Aj image" style="width: 100%" />
@@ -60,13 +60,127 @@
       </figure>
     </aside>
 
-    <footer style="text-align: center; clear: both;">
-      <address>
+    <h1 style="clear: both">Contact Me</h1>
+    <form action="/" method="GET">
+      <div>
+        <label for="name"> First Name</label>
+        <input type="text" id="name" placeholder="John" />
+      </div>
+      <div>
+        <label for="name"> Last Name</label>
+        <input type="text" id="name" placeholder="Doe" />
+      </div>
+      <div>
+        <label for="gender"> Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female" selected>Female</option>
+        </select>
+      </div>
 
-      </address>
-      <a href="#"><p>
-        Copyright Information
-      </p></a>
+      <div>
+        <label> Fruit picks</label>
+        <input type="checkbox" name="gender" id="Apple" />Apple
+        <input type="checkbox" name="gender" id="Banana" />Banna
+        <input type="checkbox" name="gender" id="Orange" />Orange
+      </div>
+      <div>
+        <label for="email"> Email</label>
+        <input type="email" id="email" placeholder="John.doe@gmail.com" />
+      </div>
+      <div>
+        <label for="age"> Age</label>
+        <input type="number" id="age" min="18" max="60" placeholder="18-60" />
+      </div>
+      <div>
+        <label for="dob"> Date of birth</label>
+        <input type="date" id="dob" />
+      </div>
+      <div>
+        <label for="mob"> Month of Birth</label>
+        <input type="month" id="mob" />
+      </div>
+      <div>
+        <label for="color"> Favourite Color</label>
+        <input type="color" id="color" />
+      </div>
+      <div>
+        <label for="password"> Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div>
+        <label for="about">About Me</label>
+        <textarea
+          name="about"
+          id="about"
+          cols="25"
+          rows="5"
+          style="vertical-align: top"
+          placeholder="This is about me"
+          minlength="10"
+          maxlength="1000"
+        ></textarea>
+      </div>
+      <label for="brand">Choose a brand</label>
+      <input type="text" name="brand" list="brands" id="brand">
+      <datalist id="brands">
+        <option value="Jacequmis"></option>
+        <option value="Gucci"></option>
+        <option value="Rocawear" selected></option>
+        <option value="Nike"></option>
+        <option value="Adidas"></option>
+        <option value="Puma"></option>
+      </datalist>
+      <div>
+        <!-- <input type="submit" value="Submit"> -->
+        <button
+          type="submit"
+          style="
+            background-color: blue;
+            color: white;
+            font-size: 24px;
+            padding: 12px;
+            border: 5px solid black;
+          "
+        >
+          <img src="https://unsplash.it/16/16" alt="My image" /> Submit
+        </button>
+        <button type="reset">Reset</button>
+      </div>
+      <div>
+        <button
+          type="submit"
+          style="
+            background-color: darkgoldenrod;
+            color: white;
+            font-size: 24px;
+            padding: 2px;
+            margin: 10px;
+            border: 1px solid black;
+          "
+        >
+          Submit
+        </button>
+        <button
+          type="reset"
+          style="
+            background-color: darkgoldenrod;
+            color: white;
+            font-size: 24px;
+            padding: 2px;
+            margin: 10px;
+            border: 1px solid black;
+          "
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+
+    <footer style="text-align: center; clear: both">
+      <address>72 gleneagle Place SW</address>
+      <a href="#"><p>Copyright Information</p></a>
     </footer>
   </body>
 </html>
