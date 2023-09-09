@@ -7,178 +7,35 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header style="height: 100px; background-color: gray">
-      <h1 style="text-align: center">Ayoola Nurudeen Etiko</h1>
-      <p style="text-align: center">The Development Edge</p>
-
-      <nav>
-        <a href="">Home</a> | <a href="">Motivation</a> | <a href="">Tools</a> |
-        <a href="">Portfolio</a>
-      </nav>
+    <header class="header-class">
+      <ul>
+        <li class="name-list-class"><a href=" "> AYOOLA N ETIKO</a></li>
+        <div class="right-alliged-nav-elements-class" id = "right-alliged-nav-elements-is">
+          <li><a class="active" href="#home-class">HOME</a></li>
+          <li><a href="#motivation-id">MOTIVATION</a></li>
+          <li><a href="#tools-id">TOOLS</a></li>
+          <li><a href="#portfolio-id">PORTFOLIO</a></li>
+        </div>
+      </ul>
     </header>
 
-    <section style="background-color: #eee; width: 65%; float: left">
-      <header>
-        <h2>Primary Content</h2>
-      </header>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          perspiciatis totam similique eaque obcaecati. Quia illum, impedit
-          itaque dolorum doloribus cum eum accusamus exercitationem ab porro.
-          Labore suscipit libero veniam totam rem assumenda accusamus
-          blanditiis, repellendus obcaecati consequuntur inventore eius, a non
-          possimus, fugit itaque. Reiciendis, laborum quo ullam odit fugit atque
-          voluptatum sed delectus, quis asperiores adipisci iure voluptatem
-          quidem reprehenderit sint magni consectetur. Omnis, doloremque nostrum
-          qui quos laborum esse quisquam non et itaque, odio amet distinctio
-          iure nulla excepturi soluta sapiente quaerat porro eaque tempore
-          reiciendis. Eius quas odio esse nisi dicta doloribus similique ratione
-          fugiat temporibus!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          perspiciatis totam similique eaque obcaecati. Quia illum, impedit
-          itaque dolorum doloribus cum eum accusamus exercitationem ab porro.
-          Labore suscipit libero veniam totam rem assumenda accusamus
-          blanditiis, repellendus obcaecati consequuntur inventore eius, a non
-          possimus, fugit itaque. Reiciendis, laborum quo ullam odit fugit atque
-          voluptatum sed delectus, quis asperiores adipisci iure voluptatem
-          quidem reprehenderit sint magni consectetur. Omnis, doloremque nostrum
-          qui quos laborum esse quisquam non et itaque, odio amet distinctio
-          iure nulla excepturi soluta sapiente quaerat porro eaque tempore
-          reiciendis. Eius quas odio esse nisi dicta doloribus similique ratione
-          fugiat temporibus!
-        </p>
-      </article>
+    <section class="home-class" id="home-id">
+      <h1>Home</h1>
     </section>
-    <aside style="background-color: #e2e2e2; width: 35%; float: left">
-      <header><h3>Secondary Content</h3></header>
-      <figure>
-        <img src="//unsplash.it/200/160" alt="Aj image" style="width: 100%" />
-        <figcaption>This is a caption</figcaption>
-      </figure>
-    </aside>
 
-    <h1 style="clear: both">Contact Me</h1>
-    <form action="/" method="GET">
-      <div>
-        <label for="name"> First Name</label>
-        <input type="text" id="name" placeholder="John" />
-      </div>
-      <div>
-        <label for="name"> Last Name</label>
-        <input type="text" id="name" placeholder="Doe" />
-      </div>
-      <div>
-        <label for="gender"> Gender</label>
-        <select name="gender" id="gender">
-          <option value="male">Male</option>
-          <option value="female" selected>Female</option>
-        </select>
-      </div>
+    <section class="motivation-class" id="motivation-id">
+      <h1>Motivation</h1>
+    </section>
 
-      <div>
-        <label> Fruit picks</label>
-        <input type="checkbox" name="gender" id="Apple" />Apple
-        <input type="checkbox" name="gender" id="Banana" />Banna
-        <input type="checkbox" name="gender" id="Orange" />Orange
-      </div>
-      <div>
-        <label for="email"> Email</label>
-        <input type="email" id="email" placeholder="John.doe@gmail.com" />
-      </div>
-      <div>
-        <label for="age"> Age</label>
-        <input type="number" id="age" min="18" max="60" placeholder="18-60" />
-      </div>
-      <div>
-        <label for="dob"> Date of birth</label>
-        <input type="date" id="dob" />
-      </div>
-      <div>
-        <label for="mob"> Month of Birth</label>
-        <input type="month" id="mob" />
-      </div>
-      <div>
-        <label for="color"> Favourite Color</label>
-        <input type="color" id="color" />
-      </div>
-      <div>
-        <label for="password"> Password</label>
-        <input type="password" id="password" />
-      </div>
+    <section class="tools-class" id="tools-id">
+      <h1>Tools</h1>
+    </section>
 
-      <div>
-        <label for="about">About Me</label>
-        <textarea
-          name="about"
-          id="about"
-          cols="25"
-          rows="5"
-          style="vertical-align: top"
-          placeholder="This is about me"
-          minlength="10"
-          maxlength="1000"
-        ></textarea>
-      </div>
-      <label for="brand">Choose a brand</label>
-      <input type="text" name="brand" list="brands" id="brand">
-      <datalist id="brands">
-        <option value="Jacequmis"></option>
-        <option value="Gucci"></option>
-        <option value="Rocawear" selected></option>
-        <option value="Nike"></option>
-        <option value="Adidas"></option>
-        <option value="Puma"></option>
-      </datalist>
-      <div>
-        <!-- <input type="submit" value="Submit"> -->
-        <button
-          type="submit"
-          style="
-            background-color: blue;
-            color: white;
-            font-size: 24px;
-            padding: 12px;
-            border: 5px solid black;
-          "
-        >
-          <img src="https://unsplash.it/16/16" alt="My image" /> Submit
-        </button>
-        <button type="reset">Reset</button>
-      </div>
-      <div>
-        <button
-          type="submit"
-          style="
-            background-color: darkgoldenrod;
-            color: white;
-            font-size: 24px;
-            padding: 2px;
-            margin: 10px;
-            border: 1px solid black;
-          "
-        >
-          Submit
-        </button>
-        <button
-          type="reset"
-          style="
-            background-color: darkgoldenrod;
-            color: white;
-            font-size: 24px;
-            padding: 2px;
-            margin: 10px;
-            border: 1px solid black;
-          "
-        >
-          Reset
-        </button>
-      </div>
-    </form>
+    <section class="Portfolio-class" id="portfolio-id">
+      <h1>Portfolio</h1>
+    </section>
 
-    <footer style="text-align: center; clear: both">
+    <footer>
       <address>72 gleneagle Place SW</address>
       <a href="#"><p>Copyright Information</p></a>
     </footer>
