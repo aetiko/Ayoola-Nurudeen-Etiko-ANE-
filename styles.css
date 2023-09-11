@@ -1,32 +1,37 @@
-*{
+* {
     margin: 0;
 }
 
-ul{
+header {
+    /* height: 1em; */
+    /* border-bottom: 100px solid; */
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: pink;
+    /* background-color: pink; */
+    height: 3.7em;
     /* use this ; */
-    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-li{
+li {
     float: left;
-    border-right:5px solid #bbb;
+    border-right: 5px solid #bbb;
 }
-
 
 li:last-child {
     border-right: none;
-  }
+}
 
-  li.name-list-class{
+li.name-list-class {
     border-right: none;
-  }
+}
 
-li a{
+li a {
     display: block;
     color: black;
     text-align: center;
@@ -34,6 +39,25 @@ li a{
     text-decoration: none;
 }
 
-.right-alliged-nav-elements-class{
+.right-alliged-nav-elements-class {
     float: right;
 }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media all and (max-width: 575.98px) { }
+
+/* // Small devices (landscape phones, 576px and 767.98px) */
+@media all and  (min-width: 576px) and (max-width: 767.98px) { }
+
+/* // Medium devices (tablets, 768px and 991.98) */
+@media all and  (min-width: 768px) and (max-width: 991.98px) {  }
+
+/* // Large devices (desktops, 992px and 1199.98) */
+@media all and (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* // X-Large devices (large desktops, 1200px and 1399.98) */
+@media all and  (min-width: 1200px) and (max-width: 1399.98px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px ) */
+@media all and  (min-width: 1400px) { }
+
