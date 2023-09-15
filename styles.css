@@ -1,59 +1,137 @@
-* {
-    margin: 0;
+:root {
+    font-family: Lobster, sans-serif;
+    /* min-height: 100vh; */
+    /* max-width: 1440px; */
+    background-color: #ffffff;
 }
 
-header {
-    /* height: 1em; */
-    /* border-bottom: 100px solid; */
+body{
+    margin: 0px !important;
+    background-color: white;
+    border: 1px solid #ddd;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* background-color: pink; */
-    height: 3.7em;
-    /* use this ; */
+.page-container{
+
+}
+
+.nav{
+
+}
+
+nav{
     background-color: rgba(255, 255, 255, 0.9);
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-li {
-    float: left;
-    border-right: 5px solid #bbb;
+nav .logo{
+    display: flex;
+    align-items: center;
 }
 
-li:last-child {
-    border-right: none;
+nav .logo img{
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+    /* border-left: 1px solid black; */
 }
 
-li.name-list-class {
-    border-right: none;
+.title{
+    border-left: 5px solid black;
+    /* padding: 10px; */
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 
-li a {
-    display: block;
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li{
+    color: white;
+    padding: 22px 40px;
+}
+
+nav ul li:hover{
+    background-color: #222222;
+}
+
+nav ul li.active{
+    background-color: #222222;
+}
+
+nav ul li a{
     color: black;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.right-alliged-nav-elements-class {
-    float: right;
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/backqrounds/leone-venter-pVt9j3iWtPM-unsplash.jpg);
+    background-size: cover;
+    background-color: #333333;
 }
+
+@keyframes appear{
+    from{
+        opacity: 0.0;
+        top: -100px;
+    }
+    to{
+        opacity: 1.0;;
+        top: 0.0;
+    }
+}
+
+.banner .heading{
+    flex: 1;
+    justify-self: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 100px;
+    animation: appear 5s ease-in-out 0s forwards;
+}
+
+
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media all and (max-width: 575.98px) {
-    .top-nav-class{
-
+    nav{
+        flex-direction: column;
+        align-items: center;
     }
+
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    
  }
 
 /* // Small devices (landscape phones, 576px and 767.98px) */
 @media all and  (min-width: 576px) and (max-width: 767.98px) {
-    .top-nav-class{
-        
+    nav{
+        justify-content: flex-start;
+    }
+
+    nav ul{
+        justify-content: space-between;
     }
  }
 
@@ -83,5 +161,16 @@ li a {
     .top-nav-class{
         
     }
+ }
+
+ .footer{
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 24px;
  }
 
