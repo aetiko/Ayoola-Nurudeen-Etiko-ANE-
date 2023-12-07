@@ -28,6 +28,7 @@
     opacity: 0;
     cursor: pointer;
 }
+
 .hamburger-menu {
     height: 26px;
     width: 32px;
@@ -42,24 +43,22 @@
     height: 5px;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid #2d2a28;
+    border: 2px solid #2d2a28;
 }
 
 .line1 {
-    transform-origin: 0% 0%;
+    transform-origin: 100% 100%;
     transition: transform 0.4s ease-in-out;
-    background: #f7a565;
 }
 
-.line2 {
-    transition: transform 0.2s ease-in-out;
-    background: #f4ce4b;
-}
-
-.line3 {
-    transform-origin: 0% 100%;
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7 {
+    /* transform-origin: 0% 100%; */
     transition: transform 0.4s ease-in-out;
-    background: #51c492;
 }
 
 .menu-list {
@@ -67,9 +66,9 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     opacity: 0;
     overflow: hidden;
     padding: 0;
@@ -86,6 +85,10 @@
 
 .home-container,
 .projects-container,
+.motivation-container,
+.pathway-container,
+.hobbies-container,
+.about-container,
 .contact-container {
     border: 1px solid #000000;
     box-shadow: 3px 3px 1px 2px rgba(45, 42, 40, 0.9);
@@ -99,18 +102,20 @@
 }
 
 .home-container {
-    background: #f7a565;
     margin-bottom: 15px;
 }
 
-.projects-container {
-    background: #f4ce4b;
+.projects-container,
+.motivation-container,
+.pathway-container,
+.hobbies-container,
+.about-container {
     margin: 15px 0;
 }
 
 .contact-container {
-    background: #51c492;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .menu-list li {
@@ -121,14 +126,13 @@
     font-weight: bolder;
 }
 
-.home-container:hover {
-    border: 2px solid #000000;
-}
-
-.projects-container:hover {
-    border: 2px solid #000000;
-}
-
+.home-container:hover,
+.projects-container:hover,
+.motivation-container:hover,
+.pathway-container:hover,
+.hobbies-container:hover,
+.about-container:hover,
+.projects-container:hover,
 .contact-container:hover {
     border: 2px solid #000000;
 }
@@ -148,9 +152,25 @@
 }
 
 .nav-container input[type="checkbox"]:checked~.hamburger-menu .line2 {
-    transform: scaleY(0);
+    transform: rotate(0);
 }
 
 .nav-container input[type="checkbox"]:checked~.hamburger-menu .line3 {
+    transform: rotate(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-menu .line4 {
+    transform: rotate(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-menu .line5 {
+    transform: rotate(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-menu .line6 {
+    transform: rotate(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-menu .line7s {
     transform: rotate(-44deg);
 }
