@@ -4,7 +4,7 @@
 
 body {
     margin: 0px !important;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 
 * {
@@ -15,6 +15,8 @@ body {
     width: 15rem;
     height: 7rem;
 }
+
+
 /* // X-Small devices (portrait phones, less than 576px) */
 
 @media all and (max-width: 575.98px) {
@@ -253,6 +255,64 @@ input[type=submit]:hover {
     flex: 1;
 }
 
+
+/* main section */
+
+.section-container {
+    /* height: 170vh; */
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+    /* column-gap: 5px; */
+}
+.recentWork-container{
+    width: 70%;
+}
+
+
+.recentWork-container > ul > li{
+    border: 1px solid black;
+    border-width: 10%;
+    padding-left: 1.6666666666666667rem;
+    padding-right: 1.6666666666666667rem;
+    padding-bottom: 0.4888888888888888rem;
+    padding-top: 0.4888888888888888rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+.recentWork-container > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+.recentWork-container > ul > li >a:hover{
+    background-color: hotpink;
+}
+
+/* .container-image>img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+.fullName > h1{
+    font-size: 7rem;
+
+    padding-right: 10%;
+}
+
+.readMoreBtn{
+    color: black;
+    background-color: white;
+    border-radius: 0rem;
+    padding-left: 1.6666666666666667rem;
+    padding-right: 1.6666666666666667rem;
+    padding-bottom: 0.8888888888888888rem;
+    padding-top: 0.8888888888888888rem;
+    font-size: 0.7777777777777778rem;
+}
 .footer {
     position: fixed;
     left: 0;

@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 86%;
+    width: 96%;
     padding: 35px 0;
     max-width: 100rem;
     height: 10rem;
@@ -147,30 +148,22 @@
     transition: opacity 2s;
 }
 
+/* .nav-container input[type="checkbox"]:checked~.fullName {
+    opacity: 0;
+    transition: opacity 1s;
+} */
+
 .nav-container input[type="checkbox"]:checked~.hamburger-menu .line1 {
     transform: rotate(44deg);
 }
 
-.nav-container input[type="checkbox"]:checked~.hamburger-menu .line2 {
+.nav-container input[type="checkbox"]:checked~.hamburger-menu .line2,
+.line3,
+.line4,
+.line5,
+.line6 {
     transform: rotate(0);
 }
-
-.nav-container input[type="checkbox"]:checked~.hamburger-menu .line3 {
-    transform: rotate(0);
-}
-
-.nav-container input[type="checkbox"]:checked~.hamburger-menu .line4 {
-    transform: rotate(0);
-}
-
-.nav-container input[type="checkbox"]:checked~.hamburger-menu .line5 {
-    transform: rotate(0);
-}
-
-.nav-container input[type="checkbox"]:checked~.hamburger-menu .line6 {
-    transform: rotate(0);
-}
-
 .nav-container input[type="checkbox"]:checked~.hamburger-menu .line7s {
     transform: rotate(-44deg);
 }
