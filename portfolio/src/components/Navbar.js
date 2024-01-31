@@ -1,14 +1,25 @@
 import { ReactComponent as Brand } from "../Images/Logos/6.svg";
+import { ReactComponent as Hamburger } from "../Images/icons/hamburger.svg";
 import { NavLink } from "react-router-dom";
+import "../styles/components/navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
   return (
     <nav className="navbar">
       <div className="container">
         <div className="logo">
           <Brand />
         </div>
-        <div className="nav-elements">
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <Hamburger />
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
