@@ -1,0 +1,17 @@
+.section-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 200px;
+    margin: 40px;
+    /* background-color: cadetblue; */
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 25px;
+}
+img{
+    width: 40rem;
+    height: 25rem;
+}
