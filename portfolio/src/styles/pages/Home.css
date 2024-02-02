@@ -1,8 +1,10 @@
 .section-one{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 200px;
+    grid-gap: 60px;
     margin: 40px;
+    /* border: 1px solid black; */
+    height: 70vh;
     /* background-color: cadetblue; */
 }
 h1{
@@ -14,4 +16,13 @@ p{
 img{
     width: 40rem;
     height: 25rem;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+button{
+    height: 5rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
 }

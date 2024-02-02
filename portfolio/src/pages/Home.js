@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/pages/Home.css";
-import IntroImage from "../Images/ayo/1.JPG";
+import IntroImage from "../Images/backqrounds/1.jpg";
 
 const Home = () => {
   return (
     <>
       <div className="section-one">
         <div className="introduction">
-          <h1>Nurudeen Etiko</h1>
+          <h1>Hi! I am Nurudeen</h1>
+          <h6>"The light of Islam"</h6>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             quia repudiandae at alias ipsam enim eum, nostrum id. Quo quibusdam
@@ -20,6 +21,7 @@ const Home = () => {
         <div className="intro-image">
           <img src={IntroImage} alt="A picture of Nurudeen Etiko" />
         </div>
+        <button>Nurudeen's Path</button>
       </div>
     </>
   );

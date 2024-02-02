@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fcfcfc;
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: #EEEDEB;
 }
 /* Navigation styles Desktop UI */
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
+    /* max-width: 1100px; */
+    margin: 0 ;
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,14 @@ body {
 
 .navbar {
     height: 60px;
-    background-color: #fef7e5;
+    /* background-color: #fef7e5; */
     position: relative;
 }
 
-.logo {}
+.logo {
+    /* margin: 0; */
+    /* border: 1px solid black; */
+}
 
 .menu-icon {
     display: none;
@@ -44,6 +47,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
 }
+
 
 .nav-elements ul li:not(:last-child) {
     margin-right: 60px;
@@ -85,7 +89,7 @@ body {
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: #fef7e5;
+        background-color: #EEEDEB;
         width: 0;
         height: calc(100vh - 60px);
         transition: all 0.3s ease-in;
