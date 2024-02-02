@@ -21,8 +21,16 @@ const Home = () => {
         <div className="intro-image">
           <img src={IntroImage} alt="A picture of Nurudeen Etiko" />
         </div>
-        <button>Nurudeen's Path</button>
+        <button>Click to learn more about Nurudeen's Path</button>
       </div>
+{/* 
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ flex: 1, backgroundColor: "black", height: "10px" }} />
+
+        <p style={{ margin: "0 10px" }}>Time To Program</p>
+
+        <div style={{ flex: 1, backgroundColor: "black", height: "10px" }} />
+      </div> */}
     </>
   );
 };
