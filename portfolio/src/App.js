@@ -1,14 +1,21 @@
-import { BrowserRouter} from "react-router-dom";
+
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
+import Monuments from "./pages/monuments";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
-      <Home />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/home" element={<Home />} />
+          <Route path="/monuments" element={<Monuments />} /> 
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
