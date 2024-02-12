@@ -1,20 +1,16 @@
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Navbar from "./components/Navbar";
-
+import NavBar from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
-import Monuments from "./pages/monuments";
+import Projects from "./pages/projects";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-        <Route path="/home" element={<Home />} />
-          <Route path="/monuments" element={<Monuments />} /> 
-        </Routes>
-      </BrowserRouter>
+    <div className="App">
+      <NavBar/>
+      <Home />
+      <Projects />
     </div>
   );
 }
