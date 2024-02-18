@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
+@import '~bootstrap/scss/bootstrap';
 /* In this style file i define the Global Styles */
 
 * {
@@ -19,7 +19,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background-color: #121212 !important;
+    // background-color: #121212 !important;
     color: #fff !important;
 }
 

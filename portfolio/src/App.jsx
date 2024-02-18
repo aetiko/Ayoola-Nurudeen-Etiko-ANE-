@@ -1,16 +1,15 @@
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import NavBar from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./pages/Home";
-import Projects from "./pages/projects";
+import './App.scss';
+// import Home from "./pages/Home";
+// import Projects from "./pages/projects";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Home />
-      <Projects />
+      {/* <NavBar/> */}
+      {/* <Home /> */}
+      {/* <Projects /> */}
     </div>
   );
 }
