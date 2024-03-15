@@ -1,6 +1,7 @@
 import Preloader from './components/Pre'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Navbar';
+import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { useState, useEffect} from 'react';
 // import ScrollToTop from "./components/ScrollToTop";
@@ -44,11 +45,12 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} /> */}
         </Routes>
-        {/* <Footer /> */}
+        
       </div>
     </Router>
 
     <About />
+    <Footer />
 
     </>
     

@@ -1,6 +1,23 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
+import {
+    DiJavascript1,
+    DiReact,
+    DiNodejs,
+    DiMongodb,
+    DiPython,
+    DiGit,
+    DiJava,
+  } from "react-icons/di";
+  import {
+    SiRedis,
+    SiFirebase,
+    SiNextdotjs,
+    SiSolidity,
+    SiPostgresql,
+  } from "react-icons/si";
+  import { TbBrandGolang } from "react-icons/tb";
 function Techstack() {
    
    
@@ -9,44 +26,44 @@ function Techstack() {
         <Col xs={4} md={2} className="tech-icons">
           <CgCPlusPlus />
         </Col>
-        <Col xs={7} md={8} className="tech-icons">
-          {/* <DiJavascript1 /> */}
+        <Col xs={4} md={2} className="tech-icons">
+          <DiJavascript1 />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <TbBrandGolang /> */}
+          <TbBrandGolang />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiNodejs /> */}
+          <DiNodejs />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiReact /> */}
+          <DiReact />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <SiSolidity /> */}
+          <SiSolidity />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiMongodb /> */}
+          <DiMongodb />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <SiNextdotjs /> */}
+          <SiNextdotjs />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiGit /> */}
+          <DiGit />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <SiFirebase /> */}
+          <SiFirebase />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <SiRedis /> */}
+          <SiRedis />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <SiPostgresql /> */}
+          <SiPostgresql />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiPython /> */}
+          <DiPython />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          {/* <DiJava /> */}
+          <DiJava />
         </Col>
       </Row>
     );

@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import Techstack from "./Techstack";
+import Toolstack from "./Toolstack";
+import Github from "./Github";
 import laptopImage from "../../Images/about/about.png";
 function About() {
     return (
@@ -40,9 +42,9 @@ function About() {
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
-          {/* <Toolstack /> */}
+          <Toolstack />
   
-          {/* <Github /> */}
+          <Github />
         </Container>
       </Container>
     );
