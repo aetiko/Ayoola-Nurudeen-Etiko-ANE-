@@ -1,4 +1,4 @@
-import HomeComponent  from "../components/Home/Home";
+import AboutComponent  from "../components/About/About";
 
 
 function Home() {
@@ -6,7 +6,7 @@ function Home() {
   // And return the Hero Section with JSX
   return (
     <>
-      <HomeComponent />
+      <AboutComponent />
     </>
   );
 }
