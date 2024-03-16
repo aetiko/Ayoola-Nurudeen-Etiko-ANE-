@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/pages/Home.css";
 import IntroImage from "../Images/backqrounds/1.jpg";
 
-const Monuments = () => {
+const Awards = () => {
   return (
     <>
       <div className="section-one">
@@ -19,4 +19,4 @@ const Monuments = () => {
     </>
   );
 };
-export default Monuments;
+export default Awards;
