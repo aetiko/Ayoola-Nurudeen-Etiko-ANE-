@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/components/navbar.scss";
 import { Link } from "react-router-dom";
+import { VscGrabber, VscClose } from "react-icons/vsc";
 import { logotext ,socialprofils } from "../../content_data";
 import Themetoggle from "../ThemeToggle/ThemeToggle";
 function NavBar() {
@@ -28,7 +28,7 @@ function NavBar() {
         </div>
       </div>
 
-      {/* <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+      <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
         <div className="bg__menu h-100">
           <div className="menu__wrapper">
             <div className="menu__container p-3">
@@ -57,12 +57,12 @@ function NavBar() {
           </div>
           <p className="copyright m-0">copyright __ {logotext}</p>
         </div>
-      </div> */}
+      </div>
     </header>
-    {/* <div className="br-top"></div>
+    <div className="br-top"></div>
     <div className="br-bottom"></div>
     <div className="br-left"></div>
-    <div className="br-right"></div> */}
+    <div className="br-right"></div>
     
   </>
   );

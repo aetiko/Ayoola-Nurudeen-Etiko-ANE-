@@ -9,5 +9,5 @@ function Home() {
       <HomeComponent />
     </>
   );
-}
+};
 export default Home;
