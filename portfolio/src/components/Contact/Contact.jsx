@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+// import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
+import { meta } from "../../content_data";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
+import { contactConfig } from "../../content_data";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -21,40 +21,40 @@ export const ContactUs = () => {
     e.preventDefault();
     setFormdata({ loading: true });
 
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
-    };
+    // const templateParams = {
+    //   from_name: formData.email,
+    //   user_name: formData.name,
+    //   to_name: contactConfig.YOUR_EMAIL,
+    //   message: formData.message,
+    // };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
-      );
+    // emailjs
+    //   .send(
+    //     contactConfig.YOUR_SERVICE_ID,
+    //     contactConfig.YOUR_TEMPLATE_ID,
+    //     templateParams,
+    //     contactConfig.YOUR_USER_ID
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setFormdata({
+    //         loading: false,
+    //         alertmessage: "SUCCESS! ,Thankyou for your messege",
+    //         variant: "success",
+    //         show: true,
+    //       });
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       setFormdata({
+    //         alertmessage: `Faild to send!,${error.text}`,
+    //         variant: "danger",
+    //         show: true,
+    //       });
+    //       document.getElementsByClassName("co_alert")[0].scrollIntoView();
+    //     }
+    //   );
   };
 
   const handleChange = (e) => {
